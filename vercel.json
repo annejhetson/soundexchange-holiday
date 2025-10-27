@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "https://lhchq.com/soundexchange-holiday-party/$1" }
+  ]
+}
