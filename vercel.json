@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "https://lhchq.com/soundexchange-holiday-party/$1" }
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build", "config": {} }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "https://lhchq.com/soundexchange-holiday-party/$1" }
   ]
 }
