@@ -1,5 +1,8 @@
 {
   "version": 2,
+   "builds": [
+    { "src": "package.json", "use": "@vercel/static-build", "config": {} }
+  ],
   "routes": [
     { "src": "/wp-admin/(.*)", "dest": "https://lhchq.com/wp-admin/$1" },
     { "src": "/(.*)", "dest": "https://lhchq.com/soundexchange-holiday-party/$1" }
